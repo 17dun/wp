@@ -1,0 +1,150 @@
+img {border: 0px;}
+*{margin:0;padding:0;}
+body{padding:0px;margin:0px;line-height:180%;font-size:12px;font-family:Verdana,Arial,Helvetica,sans-serif;text-align:center;color:#666;text-align: center;}
+div,form,img,ul,ol,li,dl,dt,dd{margin:0;padding:0;border:0;text-align:left;}
+h1,h2,h3,h4,h5,h6 {margin:0;padding:0;font-weight:bold;margin-right:auto;margin-left:auto;}
+table,td,tr,th{font-size:12px;}
+li{list-style-type:none;}
+.clear {clear:both;}
+ul,li {list-style:none;}
+a {color:#0b5a8e; text-decoration:none;}
+a:hover {color:#ff3333;text-decoration:underline;}
+form, embed {display: inline;margin: 0;padding: 0;}
+
+body{
+    background: #f4f4f4 url(images/bg.jpg) repeat-x top left;
+}
+
+.inputbox{
+    border: 1px solid #ccc;
+    height: 24px;
+    line-height: 24px;
+    background: #fff;
+    width: 200px;
+}
+
+.go{
+    background: url(images/ss.jpg);
+    border: none;
+    width: 22px;
+    height: 24px;
+    line-height: 24px;
+    margin-top: 10px;
+}
+
+.wrap{
+    background:#eee;
+    margin:0 auto;
+    margin-bottom:2px;
+}
+.header{
+    height:160px;
+    background: transparent;
+    position: relative;
+}
+
+.header-top{
+    width:980px;
+    margin:0 auto;
+}
+
+.header-top-title{
+    float: left;
+}
+
+.header-top-search{
+    float: right;
+}
+
+.header-top-title h1 a{
+    margin-top: 10px;
+    background:url(images/logo.jpg) left top no-repeat;
+    display: block;
+    width: 600px;
+    height: 100px;
+
+}
+
+.header-nav{
+    width:980px;
+    margin:0 auto;
+    margin-top: 25px;
+}
+
+
+.header-nav .main_menu li{
+    float:left;
+    margin-right: 20px;
+    width:80px;
+    text-align: center;
+}
+
+.header-nav .main_menu li a{
+    display: block;
+    color:#fff;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.content{
+    width:980px;
+    background: #fff;
+}
+
+.main,.sider{
+    float: left;
+}
+
+.main{
+    width:800px;
+}
+
+
+.pan{
+    float:left;
+    padding:10px;
+    width: 324px;
+}
+
+.midder{
+    width:680px;
+    padding: 10px;
+}
+
+.midder li{
+    float: left;
+    width:153px;
+    height:116px;
+    margin: 8px;
+    display: block;
+}
+
+.midder li img{
+    height:116px;
+}
+
+.pan-header{
+    font-size: 14px;
+    font-weight: bold;
+    color: #75B2DD;
+    padding: 5px 5px 5px 0;
+    border-bottom: 3px solid #eee;
+}
+
+.pan-body li{
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 1px dashed #eee;
+}
+
+.sider{
+    width:180px;
+}
+
+.footer{
+    background: #ddd;
+    text-align: center;
+    border-top: 1px solid #999;
+    height: 40px;
+    line-height: 40px;
+}
