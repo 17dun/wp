@@ -20,6 +20,8 @@ function register_mysettings() {
 	register_setting( 'pake-settings', 'pake_notice');
 	register_setting( 'pake-settings', 'home_catid1');
 	register_setting( 'pake-settings', 'home_catid2');
+    register_setting( 'pake-settings', 'home_catid3');
+    register_setting( 'pake-settings', 'home_catid4');
 	register_setting( 'pake-settings', 'pake_about');
 	register_setting( 'pake-settings', 'pake_keywords');
     register_setting( 'pake-settings', 'pake_ad_postbottom');
@@ -86,6 +88,9 @@ function pake_form() {
                 <td>
                     <input class="regular-text" style="width:5em;" type="text" name="home_catid1" value="<?php echo get_option('home_catid1'); ?>" />
 					<input class="regular-text" style="width:5em;" type="text" name="home_catid2" value="<?php echo get_option('home_catid2'); ?>" />
+                    <input class="regular-text" style="width:5em;" type="text" name="home_catid3" value="<?php echo get_option('home_catid3'); ?>" />
+                    <input class="regular-text" style="width:5em;" type="text" name="home_catid4" value="<?php echo get_option('home_catid4'); ?>" />
+                    
                     <br />
                     <a title="如何查看分类ID" href="http://www.wpyou.com/how-to-find-the-category-id.html" target="_blank">如何获取分类ID</a></span>
                 </td>

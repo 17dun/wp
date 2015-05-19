@@ -25,7 +25,7 @@
         <div class="header-nav">
             <div id="nav"> 
                 <ul class="main_menu">
-                    <li><a href="/index.php">首页</a>
+                    <li><a href="/index.php"></a>
                     <?php wp_list_pages('title_li=&depth=1&sort_column=post_date&sort_order=id');?>
                 </ul>
             </div>
@@ -46,19 +46,25 @@
                 </ul>
             </div>
             <div class="pan">
-                <h3 class="pan-header">公会新闻</h3>
+                <?php if (get_option('home_catid1')) { $catid1 = get_option('home_catid1'); } ?>
+                <h3 class="pan-header"><?php wp_list_categories('include='.$catid1.'&title_li=&style=none'); ?></h3>
                 <ul class="pan-body">
-                    <li>【快乐投资学院】中国青年投资100——王维公开课干货盘点</li>
-                    <li>【快乐投资学院】中国青年投资100——王维公开课干货盘点</li>
-                    <li>【快乐投资学院】中国青年投资100——王维公开课干货盘点</li>
+                    <?php query_posts('cat='.$catid1.'&showposts=8'); ?>
+                    <?php while (have_posts()) : the_post(); ?>
+                    <li><span><?php the_time('m-d'); ?></span>
+                    <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_title(); ?></a></li>     
+                    <?php endwhile; ?> 
                 </ul>
             </div>
             <div class="pan">
-                <h3 class="pan-header">公会活动</h3>
+                <?php if (get_option('home_catid2')) { $catid2 = get_option('home_catid2'); } ?>
+                <h3 class="pan-header"><?php wp_list_categories('include='.$catid2.'&title_li=&style=none'); ?></h3>
                 <ul class="pan-body">
-                    <li>【快乐投资学院】中国青年投资100——王维公开课干货盘点</li>
-                    <li>【快乐投资学院】中国青年投资100——王维公开课干货盘点</li>
-                    <li>【快乐投资学院】中国青年投资100——王维公开课干货盘点</li>
+                    <?php query_posts('cat='.$catid2.'&showposts=8'); ?>
+                    <?php while (have_posts()) : the_post(); ?>
+                    <li><span><?php the_time('m-d'); ?></span>
+                    <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_title(); ?></a></li>     
+                    <?php endwhile; ?> 
                 </ul>
             </div>
             <div class="clear"></div>
@@ -77,19 +83,25 @@
                 <div class="clear"></div>
             </div>
             <div class="pan">
-                <h3 class="pan-header">合作会议</h3>
+                <?php if (get_option('home_catid3')) { $catid3 = get_option('home_catid3'); } ?>
+                <h3 class="pan-header"><?php wp_list_categories('include='.$catid3.'&title_li=&style=none'); ?></h3>
                 <ul class="pan-body">
-                    <li>【快乐投资学院】中国青年投资100——王维公开课干货盘点</li>
-                    <li>【快乐投资学院】中国青年投资100——王维公开课干货盘点</li>
-                    <li>【快乐投资学院】中国青年投资100——王维公开课干货盘点</li>
+                    <?php query_posts('cat='.$catid3.'&showposts=8'); ?>
+                    <?php while (have_posts()) : the_post(); ?>
+                    <li><span><?php the_time('m-d'); ?></span>
+                    <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_title(); ?></a></li>     
+                    <?php endwhile; ?> 
                 </ul>
             </div>
             <div class="pan">
-                <h3 class="pan-header">推荐项目</h3>
+                <?php if (get_option('home_catid4')) { $catid4 = get_option('home_catid4'); } ?>
+                <h3 class="pan-header"><?php wp_list_categories('include='.$catid4.'&title_li=&style=none'); ?></h3>
                 <ul class="pan-body">
-                    <li>【快乐投资学院】中国青年投资100——王维公开课干货盘点</li>
-                    <li>【快乐投资学院】中国青年投资100——王维公开课干货盘点</li>
-                    <li>【快乐投资学院】中国青年投资100——王维公开课干货盘点</li>
+                    <?php query_posts('cat='.$catid4.'&showposts=8'); ?>
+                    <?php while (have_posts()) : the_post(); ?>
+                    <li><span><?php the_time('m-d'); ?></span>
+                    <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_title(); ?></a></li>     
+                    <?php endwhile; ?> 
                 </ul>
             </div>
         </div>
