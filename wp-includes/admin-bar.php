@@ -794,14 +794,14 @@ function wp_admin_bar_updates_menu( $wp_admin_bar ) {
 	$title = '<span class="ab-icon"></span><span class="ab-label">' . number_format_i18n( $update_data['counts']['total'] ) . '</span>';
 	$title .= '<span class="screen-reader-text">' . $update_data['title'] . '</span>';
 
-	$wp_admin_bar->add_menu( array(
-		'id'    => 'updates',
-		'title' => $title,
-		'href'  => network_admin_url( 'update-core.php' ),
-		'meta'  => array(
-			'title' => $update_data['title'],
-		),
-	) );
+	// $wp_admin_bar->add_menu( array(
+	// 	'id'    => 'updates',
+	// 	'title' => $title,
+	// 	'href'  => network_admin_url( 'update-core.php' ),
+	// 	'meta'  => array(
+	// 		'title' => $update_data['title'],
+	// 	),
+	// ) );
 }
 
 /**

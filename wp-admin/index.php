@@ -7,6 +7,9 @@
  */
 
 /** Load WordPress Bootstrap */
+
+header("Location: edit.php");
+exit;
 require_once( dirname( __FILE__ ) . '/admin.php' );
 
 /** Load WordPress dashboard API */
