@@ -6,9 +6,6 @@
     <meta name="keywords" content="<?php echo $keywords?>" />
     <title></title>
     <link rel="stylesheet" href="<?php bloginfo('template_url');?>/index.css" type="text/css" media="screen" />
-    <link rel="stylesheet" href="<?php bloginfo('template_url');?>/css/slide-2.css" type="text/css" media="screen" />
-    <script type="text/javascript" src="<?php bloginfo('template_url');?>/js/jquery-1.7.2.min.js"></script>
-    <script type="text/javascript" src="<?php bloginfo('template_url');?>/js/slide.js"></script>
     <script type="text/javascript" src="<?php bloginfo('template_url');?>/images/base.js"></script>
 </head>
 <body>
@@ -37,43 +34,23 @@
     <div class="wrap content">
         <div class="main">
             <div class="banner">
-                   <div id="slider-bg">             
-                    <div id="slider-photos"> 
-                      <div id="slides"> 
-                        <div class="slides_container">
-                        <div class="slide"> 
-                           <img src="images/11111.jpg" width="700" height="250" alt="第十八届全国大学生网球锦标赛暨全国高校“校长杯”网球比赛开幕"/> 
-                           <div class="caption"> 
-                            <h1><a href="#" style="text-decoration:none;font-size:12px;">第十八届全国大学生网球锦标赛暨全国高校“校长杯”网球比赛开幕</a></h1> 
-                          </div> 
-                        </div>
-                        <div class="slide">
-                            <img src="images/big1.jpg" width="700" height="250" alt="第十三届全国大学生田径锦标赛开幕 人大学子男子百米专业组夺冠"/> 
-                            <div class="caption"> 
-                              <h1><a href="#" style="text-decoration:none;font-size:12px;">第十三届全国大学生田径锦标赛开幕 人大学子男子百米专业组夺冠</a></h1> 
-                             </div> 
-                        </div> 
-                        <div class="slide"> 
-                        <img src="images/777.jpg" width="700" height="250" alt=""/> 
-                          <div class="caption"> 
-                            <h1><a href="#" style="text-decoration:none;font-size:12px;">新闻学院开展赴山东诸城、湖南中方“新闻学子走基层”学习实践活动</a></h1> 
-                            </div> 
-                     </div>
-
-                    <div class="slide">
-                     <img src="images/22.jpg" width="700" height="250" alt="人大成立中国共产党历史与理论研究院 9名专家受聘任学术顾问"/> 
-                        <div class="caption"> 
-                           <h1><a href="#" style="text-decoration:none;font-size:12px;">人大成立中国共产党历史与理论研究院 9名专家受聘任学术顾问</a></h1> 
-                        </div> 
-                    </div>
-                      </div>    
-                        <a href="#" class="prev"><img src="images/arrow-prev.png" width="30" height="70" alt="Arrow Prev" border="0"></a> 
-                        <a href="#" class="next"><img src="images/arrow-next.png" width="30" height="70" alt="Arrow Next" border="0"></a>
-                    </div> 
-                </div> 
+                <ul class="banner-images-box">
+                    <?php
+                        $i=1;
+                        while ( $i<= 5) {
+                            echo '<li><a href="'.get_option('home_banner'.$i.'_link').'"><img src="'.get_option('home_banner'.$i.'_img').'">'.get_option('home_banner'.$i.'_title').'</a></li>';
+                            $i++;
+                        }
+                    ?>
+                </ul>
+                <ul class="banner-btn-box">
+                    <li><a href="#" class="banner-btn">1</a></li>
+                    <li><a href="#" class="banner-btn">2</a></li>
+                    <li><a href="#" class="banner-btn">3</a></li>
+                    <li><a href="#" class="banner-btn">4</a></li>
+                    <li><a href="#" class="banner-btn">5</a></li>
+                </ul>
             </div>
-            </div>
-            <div class="clear"></div>
             <div class="pan">
                 <?php if (get_option('home_catid1')) { $catid1 = get_option('home_catid1'); } ?>
                 <h3 class="pan-header"><?php wp_list_categories('include='.$catid1.'&title_li=&style=none'); ?></h3>
@@ -97,6 +74,20 @@
                 </ul>
             </div>
             <div class="clear"></div>
+            <div class="midder">
+                <h3 class="pan-header">公会活动</h3>
+                <ul>
+                    <li><img src="wp-content/themes/tutear/images/shili.jpg"/></li>
+                    <li><img src="wp-content/themes/tutear/images/shili.jpg"/></li>
+                    <li><img src="wp-content/themes/tutear/images/shili.jpg"/></li>
+                    <li><img src="wp-content/themes/tutear/images/shili.jpg"/></li>
+                    <li><img src="wp-content/themes/tutear/images/shili.jpg"/></li>
+                    <li><img src="wp-content/themes/tutear/images/shili.jpg"/></li>
+                    <li><img src="wp-content/themes/tutear/images/shili.jpg"/></li>
+                    <li><img src="wp-content/themes/tutear/images/shili.jpg"/></li>
+                </ul>
+                <div class="clear"></div>
+            </div>
             <div class="pan">
                 <?php if (get_option('home_catid3')) { $catid3 = get_option('home_catid3'); } ?>
                 <h3 class="pan-header"><?php wp_list_categories('include='.$catid3.'&title_li=&style=none'); ?></h3>
@@ -139,21 +130,5 @@
     </div>
 
     <div class="wrap footer"> <?php if ( get_option('com_copyright') ) { echo stripslashes(get_option('com_copyright'));} ?></div>
-
-    <script>
-        $(document).ready(function(){
-        $('#slides').slides({
-            preload: true,
-            preloadImage: 'images/ajax-loader.gif',
-            effect: 'slide',
-            play: 5000,
-            pause: 2500,
-            hoverPause: true
-        });
-    });
-
-
-    </script>
-
 </body>
 </html>

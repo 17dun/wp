@@ -58,7 +58,7 @@ body{
 
 .header-top-title h1 a{
     margin-top: 10px;
-    background:url(images/logo.jpg) left top no-repeat;
+    /*background:url(images/logo.jpg) left top no-repeat;*/
     display: block;
     width: 600px;
     height: 100px;
@@ -99,6 +99,34 @@ body{
     width:800px;
 }
 
+.banner{
+    width:700px;
+    border:1px solid #eee;
+}
+
+/*.banner img{
+    width:700px;
+    height:200px;
+}*/
+
+/*.banner-images-box li{
+    float: left;
+    position: relative;
+
+}*/
+
+/*.banner-images-title{
+    position: absolute;
+    bottom:5px;
+    left:0;
+    display: block;
+    background: #333;
+    opacity: .5;
+    height:30px;
+    width:100%;
+    line-height: 30px;
+}
+*/
 
 .pan{
     float:left;

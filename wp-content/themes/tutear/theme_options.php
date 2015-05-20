@@ -32,7 +32,29 @@ function register_mysettings() {
 	register_setting( 'pake-settings', 'pake_fuwu1_nr');
 	register_setting( 'pake-settings', 'pake_fuwu2_nr');
 	register_setting( 'pake-settings', 'pake_fuwu3_nr');
-    register_setting( 'pake-settings', 'tutbear_copyright');
+    register_setting( 'pake-settings', 'com_copyright');
+
+    register_setting( 'pake-settings', 'home_banner1_img');
+    register_setting( 'pake-settings', 'home_banner1_title');
+    register_setting( 'pake-settings', 'home_banner1_link');
+
+    register_setting( 'pake-settings', 'home_banner2_img');
+    register_setting( 'pake-settings', 'home_banner2_title');
+    register_setting( 'pake-settings', 'home_banner2_link');
+
+    register_setting( 'pake-settings', 'home_banner3_img');
+    register_setting( 'pake-settings', 'home_banner3_title');
+    register_setting( 'pake-settings', 'home_banner3_link');
+
+    register_setting( 'pake-settings', 'home_banner4_img');
+    register_setting( 'pake-settings', 'home_banner4_title');
+    register_setting( 'pake-settings', 'home_banner4_link');
+
+    register_setting( 'pake-settings', 'home_banner5_img');
+    register_setting( 'pake-settings', 'home_banner5_title');
+    register_setting( 'pake-settings', 'home_banner5_link');
+
+
 
 }
 
@@ -114,7 +136,7 @@ function pake_form() {
                    
                 </td>
         	</tr>
- <tr valign="top">
+            <tr valign="top">
             	<td><h3 id="pake_ad1">服务内容设置</h3></td>
         	</tr>
             <tr valign="top">
@@ -180,11 +202,87 @@ function pake_form() {
             <tr valign="top">
                 <th scope="row"><label>底部版权申明<span class="description"></span></label></th>
                 <td>
-                    <textarea style="width:35em; height:10em;" name="tutbear_copyright"><?php echo get_option('tutbear_copyright'); ?></textarea>
+                    <textarea style="width:35em; height:10em;" name="com_copyright"><?php echo get_option('com_copyright'); ?></textarea>
                     <br />
                    
                 </td>
             </tr>
+    
+            <tr valign="top">
+                <td><h3 id="pake_banner">首页banner设置</h3></td>
+            </tr>
+            <tr valign="top">
+                <th scope="row"><label>第1张图<span class="description"></span></label></th>
+                <td>
+                    <table>
+                    <tr>
+                        <td>图片<input class="regular-text" style="width:30em;" type="text" name="home_banner1_img" value="<?php echo get_option('home_banner1_img'); ?>" /></td>
+                    </tr>
+                    <tr>
+                        <td>标题<input class="regular-text" style="width:30em;" type="text" name="home_banner1_title" value="<?php echo get_option('home_banner1_title'); ?>" /></td>
+                    </tr>
+                    <tr><td>链接<input class="regular-text" style="width:30em;" type="text" name="home_banner1_link" value="<?php echo get_option('home_banner1_link'); ?>" /></td></tr>
+                    </table>
+                </td>
+            </tr>
+            <tr valign="top">
+                <th scope="row"><label>第2张图<span class="description"></span></label></th>
+                <td>
+                    <table>
+                    <tr>
+                        <td>图片<input class="regular-text" style="width:30em;" type="text" name="home_banner2_img" value="<?php echo get_option('home_banner2_img'); ?>" /></td>
+                    </tr>
+                    <tr>
+                        <td>标题<input class="regular-text" style="width:30em;" type="text" name="home_banner2_title" value="<?php echo get_option('home_banner2_title'); ?>" /></td>
+                    </tr>
+                    <tr><td>链接<input class="regular-text" style="width:30em;" type="text" name="home_banner2_link" value="<?php echo get_option('home_banner2_link'); ?>" /></td></tr>
+                    </table>
+                </td>
+            </tr>
+            <tr valign="top">
+                <th scope="row"><label>第3张图<span class="description"></span></label></th>
+                <td>
+                    <table>
+                    <tr>
+                        <td>图片<input class="regular-text" style="width:30em;" type="text" name="home_banner3_img" value="<?php echo get_option('home_banner3_img'); ?>" /></td>
+                    </tr>
+                    <tr>
+                        <td>标题<input class="regular-text" style="width:30em;" type="text" name="home_banner3_title" value="<?php echo get_option('home_banner3_title'); ?>" /></td>
+                    </tr>
+                    <tr><td>链接<input class="regular-text" style="width:30em;" type="text" name="home_banner3_link" value="<?php echo get_option('home_banner3_link'); ?>" /></td></tr>
+                    </table>
+                </td>
+            </tr>
+            <tr valign="top">
+                <th scope="row"><label>第4张图<span class="description"></span></label></th>
+                <td>
+                    <table>
+                    <tr>
+                        <td>图片<input class="regular-text" style="width:30em;" type="text" name="home_banner4_img" value="<?php echo get_option('home_banner4_img'); ?>" /></td>
+                    </tr>
+                    <tr>
+                        <td>标题<input class="regular-text" style="width:30em;" type="text" name="home_banner4_title" value="<?php echo get_option('home_banner4_title'); ?>" /></td>
+                    </tr>
+                    <tr><td>链接<input class="regular-text" style="width:30em;" type="text" name="home_banner4_link" value="<?php echo get_option('home_banner4_link'); ?>" /></td></tr>
+                    </table>
+                </td>
+            </tr>
+            <tr valign="top">
+                <th scope="row"><label>第5张图<span class="description"></span></label></th>
+                <td>
+                    <table>
+                    <tr>
+                        <td>图片<input class="regular-text" style="width:30em;" type="text" name="home_banner5_img" value="<?php echo get_option('home_banner5_img'); ?>" /></td>
+                    </tr>
+                    <tr>
+                        <td>标题<input class="regular-text" style="width:30em;" type="text" name="home_banner5_title" value="<?php echo get_option('home_banner5_title'); ?>" /></td>
+                    </tr>
+                    <tr><td>链接<input class="regular-text" style="width:30em;" type="text" name="home_banner5_link" value="<?php echo get_option('home_banner5_link'); ?>" /></td></tr>
+                    </table>
+                </td>
+            </tr>
+
+
 		</table>
 		<p class="submit">
 		<input type="submit" name="save" id="button-primary" class="button-primary" value="<?php _e('Save Changes') ?>" />
