@@ -26,8 +26,6 @@ function get_recent_comments() {
 
 
 
-
-
 /*PAGINATION*/
 function par_pagenavi($range = 4){
 	global $paged, $wp_query;
