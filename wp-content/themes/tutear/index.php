@@ -108,6 +108,22 @@
                 </ul>
             </div>
             <div class="clear"></div>
+            <div class="pan middle">
+                <h3 class="pan-header">孵化案例</h3>
+                <ul class="pan-body">
+                    <li>
+                        <a href="#">
+                            <img src="" />
+                            <p>不知名茶</p>
+                        </a>
+                    </li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+    
+
             <div class="pan">
                 <?php if (get_option('home_catid3')) { $catid3 = get_option('home_catid3'); } ?>
                 <h3 class="pan-header"><?php wp_list_categories('include='.$catid3.'&title_li=&style=none'); ?></h3>
@@ -149,7 +165,6 @@
                     <li class="btn3"><a href=""><span>公会分会</span></a></li>
                     <li class="btn4"><a href=""><span>大记事</span></a></li>
                     <li class="btn5"><a href=""><span>联系方式</span></a></li>
-                    
                 </ul>
 
             </div>

@@ -41,6 +41,7 @@
     top: 65px;
     width: 30px;
     z-index: 101;
+    opacity: .6
 }
 #slides .next {
     left: 670px;

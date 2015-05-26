@@ -147,20 +147,21 @@ body{
     width: 324px;
 }
 
-.midder{
+.middle{
     width:680px;
     padding: 10px;
 }
 
-.midder li{
+.pan.middle li{
     float: left;
-    width:153px;
+    width:130px;
     height:116px;
     margin: 8px;
     display: block;
+    background: none;
 }
 
-.midder li img{
+.middle li img{
     height:116px;
 }
 
@@ -222,6 +223,7 @@ body{
 }
 
 #nav{
+    
 }
 
 .main_menu{
