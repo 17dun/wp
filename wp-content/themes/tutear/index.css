@@ -38,7 +38,6 @@ body{
 }
 .header{
     height:171px;
-    background: url('images/top.png') no-repeat 0 -131px;
     position: relative;
 }
 
@@ -267,47 +266,51 @@ body{
 }
 
 .nums-list li{
-    float: left;
-width: 87px;
-height: 110px;
-margin: 20px;
+float: left;
+width: 70px;
+height: 80px;
+margin: 5px;
+border: 1px solid #eee;
+background: #e7eff1;
+text-align: center;
+border-radius: 5px;
 }
 
 
 .nums-list li a{
-    height: 110px;
-line-height: 110px;
-width: 87px;
-display: inline-block;
-    background: url('images/btn.png') no-repeat;
+    height: 50px;
+    line-height: 50px;
+    width: 50px;
+    display: inline-block;
+    background: url('images/btn-bg.png') no-repeat -15px 0;
 }
 
 
 .nums-list li span{
-    display: none;
+
 }
 
-.btn0{
-    background-position: 0 0;
+.nums-list li a.btn0{
+    background-position: -15px -135px;
 }
 
 
-.btn1 a{
-    background-position: -102px 0;
+.nums-list li a.btn1{
+    background-position: -191px -2px;
 }
 
-.btn2 a{
-    background-position: 0 0;
+.nums-list li a.btn2{
+    background-position: -77px -135px;
 }
 
-.btn3 a{
-    background-position: 0 0;
+.nums-list li a.btn3{
+    background-position: -15px 0px;
 }
 
-.btn4 a{
-    background-position: 0 0;
+.nums-list li a.btn4{
+    background-position: -77px -2px;
 }
 
-.btn5 a{
-    background-position: 0 0;
+.nums-list li a.btn5{
+    background-position: -134px -2px;
 }

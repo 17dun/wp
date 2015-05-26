@@ -159,12 +159,12 @@
             </div>
             <div class="nums">
                 <ul class="nums-list">
-                    <li class="btn0"><a href=""><span>章程</span></a></li>
-                    <li class="btn1"><a href=""><span>成员简介</span></a></li>
-                    <li class="btn2"><a href=""><span>筹委会</span></a></li>
-                    <li class="btn3"><a href=""><span>公会分会</span></a></li>
-                    <li class="btn4"><a href=""><span>大记事</span></a></li>
-                    <li class="btn5"><a href=""><span>联系方式</span></a></li>
+                    <li><a class="btn0" href=""></a><p>章程</p></li>
+                    <li><a class="btn1" href=""></a><p>成员简介</p></li>
+                    <li><a class="btn2" href=""></a><p>筹委会</p></li>
+                    <li><a class="btn3" href=""></a><p>公会分会</p></li>
+                    <li><a class="btn4" href=""></a><p>大记事</p></li>
+                    <li><a class="btn5" href=""></a><p>联系方式</p></li>
                 </ul>
 
             </div>
