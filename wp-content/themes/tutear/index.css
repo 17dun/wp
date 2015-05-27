@@ -43,7 +43,7 @@ body{
 
 .header-top{
     width:980px;
-    height: 135px;
+    height: 133px;
     margin:0 auto;
     position: relative;
 }
@@ -75,6 +75,7 @@ body{
     float: left;
     font-size: 14px;
     padding: 3px;
+    color: #6285b9;
 }
 
 .header-nav{
@@ -85,8 +86,6 @@ body{
 
 .header-nav .main_menu li{
     float:left;
-    margin-right: 20px;
-    width:80px;
     text-align: center;
 }
 
@@ -95,7 +94,14 @@ body{
     color:#fff;
     font-weight: bold;
     font-size: 14px;
+    width:140px;
+    height: 39px;
 }
+
+.header-nav .main_menu li a:hover{
+    background: url('images/nav-cr.png');
+}
+
 
 .content{
     width:980px;
@@ -227,15 +233,12 @@ body{
 
 .main_menu{
     height: 33px;
-    margin: 0 5px;
-    padding-left: 5px;
 }
 
 .main_menu li{
     float: left;
     height: 35px;
     line-height: 35px;
-    padding: 0 18px;
 }
 
 .video .pan-body{
