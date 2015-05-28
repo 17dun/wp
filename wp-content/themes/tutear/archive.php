@@ -1,6 +1,6 @@
 <?php include (TEMPLATEPATH . '/header.php'); ?>
-	<div id="mainbody">
-    	<div id="left">
+	<div class="wrap content">
+    	<div class="main">
         	<div class="place">
 				<?php /* If this is a category archive */ if (is_category()) { ?>
             <div class="subnavi-l">当前位置: <a href="<?php echo get_settings('home'); ?>">首页</a> > <?php the_category(', ') ?></div>
@@ -19,7 +19,7 @@
           <?php /* If this is a paged archive */ } elseif (isset($_GET['paged']) && !empty($_GET['paged'])) { ?>
             <div class="subnavi-l"><a href="<?php echo get_settings('home'); ?>"><?php bloginfo('name'); ?></a> 存档</div>
           <?php } ?>            </div>
-    		<div class="content">
+    		<div class="contents">
 
 			<?php if (have_posts()) : ?>
                 <?php while (have_posts()) : the_post(); ?>
@@ -35,7 +35,6 @@
         </div>
         	<?php include (TEMPLATEPATH . '/sidebar.php'); ?>
 
-		        <div class="rb"></div>
 	</div>
            <div class="clear"></div>
 	</div><!-- #container -->

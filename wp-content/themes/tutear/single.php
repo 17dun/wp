@@ -1,14 +1,12 @@
-
 <?php include (TEMPLATEPATH . '/header.php'); ?>
-	<div id="mainbody"> 
-    	<div id="left"> 
-        	<div class="place"> 
-				
+	<div class="wrap content"> 
+    	<div class="main"> 
+        	<div class="place">
              <div class="subnavi-l">当前位置: <a href="<?php echo get_settings('home'); ?>">首页</a>&raquo; <?php the_category(', ') ?>&raquo; <?php the_title()?></div>
                 
 			</div> 
 			<?php if(have_posts()) : ?><?php while(have_posts()) : the_post(); ?>
-        	<div class="content"> 
+        	<div class="contents"> 
         		            	<div class="post" id="post-27"> 
             		<h2><?php the_title(); ?></h2> 
 					<div class="info"> 
@@ -63,8 +61,6 @@ while (have_posts()) : the_post(); update_post_caches($posts); ?>
         </div> 
         	<?php include (TEMPLATEPATH . '/sidebar.php'); ?>
         	
-    <div class="rb"></div>
 	</div>
            <div class="clear"></div>
-	</div><!-- #container -->
 <?php get_footer(); ?>

@@ -1,4 +1,4 @@
-<div id="right">
+<div class="sider">
     	               
                 <div class="type"><h3>文章分类</h3>
         	<ul>
@@ -8,7 +8,7 @@
             </ul>
         </div>
                 <div class="sidebox">
-        	<h3>随机文章</h3>
+        	<h3>推荐文章</h3>
 			
             <ul>
             	  <?php 

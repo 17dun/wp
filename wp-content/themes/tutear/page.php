@@ -2,7 +2,7 @@
 	<div id="mainbody">
     	<div id="left">
         	<div class="place">
-				当前位置: <a href="<?php echo get_settings('home'); ?>">首页</a> > <?php the_title(); ?></div>
+				当前位置: <a href="<?php echo get_settings('home'); ?>">首页111</a> > <?php the_title(); ?></div>
         	<div class="content">
 			<?php if (have_posts()) : ?>
             <?php while (have_posts()) : the_post(); ?>
@@ -25,4 +25,3 @@
 	</div>
            <div class="clear"></div>
 	</div><!-- #container -->
-<?php get_footer(); ?>

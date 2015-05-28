@@ -1,38 +1,42 @@
-﻿<html xmlns="http://www.w3.org/1999/xhtml"> 
+﻿<html lang="en">
 <head>
-<link rel="stylesheet" href="<?php bloginfo('template_url');?>/style.css" type="text/css" media="screen" /> 
-<script type="text/javascript" src="<?php bloginfo('template_url');?>/images/base.js"></script>
-<meta name="description" content="<?php echo $description?>" />
-<meta name="keywords" content="<?php echo $keywords?>" />
+    <meta charset="UTF-8">
+    <meta name="description" content="<?php echo $description?>" />
+    <meta name="keywords" content="<?php echo $keywords?>" />
+    <title></title>
+    <link rel="stylesheet" href="<?php bloginfo('template_url');?>/index.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="<?php bloginfo('template_url');?>/css/slide-2.css" type="text/css" media="screen" />
 </head>
-<body class="home blog cat-1-id">
-<div id="wrap"> 
-	<div id="header">
-        <div id="header_wrap">
-    	<div id="blog_title"> 
-        	<h1><a href="<?php bloginfo('home'); ?>/"><?php bloginfo('name') ?></a></h1> 
-        </div> 
-		<div id="blog_topad"> 
-        </div> 
-        <div id="top_r">
-			<div class="search" style="margin-top:20px;">
-            <form method="get" id="searchform" action="<?php bloginfo('home'); ?>/"> 
-                <input name="s" type="text" id="s" onblur="if (this.value =='') this.value='站内搜索...'" onfocus="this.value=''" onclick="if (this.value=='站内搜索...') this.value=''" value="站内搜索..." class="inputbox" /> 
-                <input type="image" src="wp-content/themes/tutear/images/ss.jpg" name="Submit" value="提交">
-                <input type="submit"  id="button" value="" class="go" /> 
-            </form>
-            </div> 
-        </div> 
-
+<body><div class="wrap header">
+        <div class="header-top">
+            <div class="header-top-title"> 
+                <h1><a href="<?php bloginfo('home'); ?>/"></a></h1> 
+            </div>
+            <div class="header-top-search">
+                <form method="get" id="searchform" action="<?php bloginfo('home'); ?>/"> 
+                    <input name="s" type="text" id="s" class="inputbox" /> 
+                     <input style="margin-bottom:-6px;" type="image" src="wp-content/themes/tutear/images/ss.jpg" name="Submit" value="提交">
+                </form>
+            </div>
+            <ul class="top-nav">
+            <li>旗下媒体 |</li>
+            <li>官方微博 |</li>
+            <li>联系我们 |</li>
+            <li>会员登录</li>
+            </ul>
+            <div class="clear"></div>
+        </div>
+        <div class="header-nav">
+            <div id="nav"> 
+                <ul class="main_menu">
+                    <li><a href="/index.php">首页</a>
+                     <li><a href="/index.php">关于公会</a>
+                     <li><a href="/index.php">新闻资讯</a>
+                     <li><a href="/index.php">协会活动</a>
+                     <li><a href="/index.php">会员服务</a>
+                     <li><a href="/index.php">入会申请</a>
+                     <li><a href="/index.php">创投孵化器</a>
+                </ul>
+            </div>
+        </div>
     </div>
-	    </div>
-                <div id="nav_wrap">
-        <div id="nav"> 
-         <ul class="main_menu">
-         <li><a href="/index.php">首页</a>
-        </ul>           
-
-        </div> 
-        <div class="sub"><?php if ( get_option('pake_notice') ) { ?>
-<?php echo stripslashes(get_option('pake_notice')); ?><?php } ?></div> 
-</div>
