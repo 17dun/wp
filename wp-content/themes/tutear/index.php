@@ -89,7 +89,7 @@
                 <?php if (get_option('home_catid1')) { $catid1 = get_option('home_catid1'); } ?>
                 <h3 class="pan-header"><?php wp_list_categories('include='.$catid1.'&title_li=&style=none'); ?></h3>
                 <ul class="pan-body">
-                    <?php query_posts('cat='.$catid1.'&showposts=8'); ?>
+                    <?php query_posts('cat='.$catid1.'&showposts=5'); ?>
                     <?php while (have_posts()) : the_post(); ?>
                     <li>
                     <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_title(); ?></a></li>     
@@ -100,7 +100,7 @@
                 <?php if (get_option('home_catid2')) { $catid2 = get_option('home_catid2'); } ?>
                 <h3 class="pan-header"><?php wp_list_categories('include='.$catid2.'&title_li=&style=none'); ?></h3>
                 <ul class="pan-body">
-                    <?php query_posts('cat='.$catid2.'&showposts=8'); ?>
+                    <?php query_posts('cat='.$catid2.'&showposts=5'); ?>
                     <?php while (have_posts()) : the_post(); ?>
                     <li>
                     <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_title(); ?></a></li>     
@@ -141,7 +141,18 @@
             </div>
             <div class="clear"></div>
 
-            <div class="pan tuijian" style="width:100%">
+            <div class="pan">
+                <?php if (get_option('home_catid4')) { $catid4 = get_option('home_catid4'); } ?>
+                <h3 class="pan-header"><?php wp_list_categories('include='.$catid4.'&title_li=&style=none'); ?></h3>
+                <ul class="pan-body">
+                    <?php query_posts('cat='.$catid4.'&showposts=8'); ?>
+                    <?php while (have_posts()) : the_post(); ?>
+                    <li>
+                    <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_title(); ?></a></li>     
+                    <?php endwhile; ?> 
+                </ul>
+            </div>
+            <div class="pan" style="margin-left:10px;">
                 <?php if (get_option('home_catid4')) { $catid4 = get_option('home_catid4'); } ?>
                 <h3 class="pan-header"><?php wp_list_categories('include='.$catid4.'&title_li=&style=none'); ?></h3>
                 <ul class="pan-body">
