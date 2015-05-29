@@ -5,11 +5,12 @@
     <meta name="description" content="<?php echo $description?>" />
     <meta name="keywords" content="<?php echo $keywords?>" />
     <title></title>
-    <link rel="stylesheet" href="<?php bloginfo('template_url');?>/index.css" type="text/css" media="screen" />
-    <link rel="stylesheet" href="<?php bloginfo('template_url');?>/css/slide-2.css" type="text/css" media="screen" />
-    <script type="text/javascript" src="<?php bloginfo('template_url');?>/js/jquery-1.7.2.min.js"></script>
-    <script type="text/javascript" src="<?php bloginfo('template_url');?>/js/slide.js"></script>
-    <script type="text/javascript" src="<?php bloginfo('template_url');?>/images/base.js"></script>
+    <link rel="stylesheet" href="box/static/index.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="box/static/css/slide-2.css" type="text/css" media="screen" />
+    <script type="text/javascript" src="box/static/js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="box/static/js/slide.js"></script>
+    <script type="text/javascript" src="box/static/js/marquee.js"></script>
+    <script type="text/javascript" src="box/static/images/base.js"></script>
 </head>
 <body>
     <div class="wrap header">
@@ -20,7 +21,7 @@
             <div class="header-top-search">
                 <form method="get" id="searchform" action="<?php bloginfo('home'); ?>/"> 
                     <input name="s" type="text" id="s" class="inputbox" /> 
-                     <input style="margin-bottom:-6px;" type="image" src="wp-content/themes/tutear/images/ss.jpg" name="Submit" value="提交">
+                     <input style="margin-bottom:-6px;" type="image" src="box/static/images/ss.jpg" name="Submit" value="提交">
                 </form>
             </div>
             <ul class="top-nav">
@@ -34,13 +35,13 @@
         <div class="header-nav">
             <div id="nav"> 
                 <ul class="main_menu">
-                    <li><a href="/index.php">首页</a>
-                     <li><a href="/index.php">关于公会</a>
-                     <li><a href="/index.php">新闻资讯</a>
-                     <li><a href="/index.php">协会活动</a>
-                     <li><a href="/index.php">会员服务</a>
-                     <li><a href="/index.php">入会申请</a>
-                     <li><a href="/index.php">创投孵化器</a>
+                    <li><a href="/index.php"><span class="menu-index"></span>公会首页</a>
+                     <li><a href="/index.php"><span class="menu-info"></span>关于公会</a>
+                     <li><a href="/index.php"><span class="menu-news"></span>新闻资讯</a>
+                     <li><a href="/index.php"><span class="menu-act"></span>协会活动</a>
+                     <li><a href="/index.php"><span class="menu-serv"></span>会员服务</a>
+                     <li><a href="/index.php"><span class="menu-merb"></span>入会申请</a>
+                     <li><a href="/index.php"><span class="menu-fuh"></span>创投孵化器</a>
                 </ul>
             </div>
         </div>
@@ -55,26 +56,25 @@
                         <div class="slide"> 
                            <img src="images/yf.jpg" width="700" height="200" alt="中国创投公会计划年内敲响纳斯达克钟声"/> 
                            <div class="caption"> 
-                            <h1><a href="#" style="text-decoration:none;font-size:12px;">中国创投公会计划年内敲响纳斯达克钟声</a></h1> 
+                            <h1><a href="#" style="text-decoration:none;font-size:14px;">中国创投公会计划年内敲响纳斯达克钟声</a></h1> 
                           </div> 
                         </div>
+                        <div class="slide"> 
+                        <img src="images/wxx.jpg" width="700" height="200" alt="90后女孩王晓湘携不知名茶成为中国创投公会一号会员"/> 
+                          <div class="caption"> 
+                            <h1><a href="#" style="text-decoration:none;font-size:14px;">0后女孩王晓湘携不知名茶成为中国创投公会顶级会员</a></h1> 
+                            </div> 
+                     </div>
                         <div class="slide">
                             <img src="images/ns.jpg" width="700" height="200" alt="中国国际农商峰会在北京举行"/> 
                             <div class="caption"> 
-                              <h1><a href="#" style="text-decoration:none;font-size:12px;">中国国际农商峰会在北京举行</a></h1> 
+                              <h1><a href="#" style="text-decoration:none;font-size:14px;">中国国际农商峰会在北京举行</a></h1> 
                              </div> 
-                        </div> 
-                        <div class="slide"> 
-                        <img src="images/777.jpg" width="700" height="200" alt=""/> 
-                          <div class="caption"> 
-                            <h1><a href="#" style="text-decoration:none;font-size:12px;">新闻学院开展赴山东诸城、湖南中方“新闻学子走基层”学习实践活动</a></h1> 
-                            </div> 
-                     </div>
-
+                        </div>
                     <div class="slide">
-                     <img src="images/22.jpg" width="700" height="200" alt="人大成立中国共产党历史与理论研究院 9名专家受聘任学术顾问"/> 
+                     <img src="images/zc.jpg" width="700" height="200" alt="京东金融2015新发力，股权众筹平台将上线"/> 
                         <div class="caption"> 
-                           <h1><a href="#" style="text-decoration:none;font-size:12px;">人大成立中国共产党历史与理论研究院 9名专家受聘任学术顾问</a></h1> 
+                           <h1><a href="#" style="text-decoration:none;font-size:14px;">京东金融2015新发力，股权众筹平台将上线</a></h1> 
                         </div> 
                     </div>
                       </div>    
@@ -113,25 +113,25 @@
                 <ul class="pan-body">
                     <li class="first">
                         <a class="img-wrap" href="#">
-                            <img src="wp-content/themes/tutear/images/shili.jpg" />
+                            <img src="box/static/images/shili.jpg" />
                         </a>
                         <a href="">不知名茶</a>
                     </li>
                     <li>
                         <a class="img-wrap"  href="#">
-                            <img src="wp-content/themes/tutear/images/shili.jpg" />
+                            <img src="box/static/images/shili.jpg" />
                         </a>
                         <a href="">不知名茶</a>
                     </li>
                     <li>
                         <a class="img-wrap" href="#">
-                            <img src="wp-content/themes/tutear/images/shili.jpg" />
+                            <img src="box/static/images/shili.jpg" />
                         </a>
                         <a href="">不知名茶</a>
                     </li>
                     <li>
                         <a class="img-wrap" href="#">
-                            <img src="wp-content/themes/tutear/images/shili.jpg" />
+                            <img src="box/static/images/shili.jpg" />
                             
                         </a>
                         <a href="">不知名茶</a>
@@ -168,7 +168,7 @@
         <div class="sider">
             <div class="pan video">
                 <div class="pan-body">
-                <img class="video-img" src="wp-content/themes/tutear/images/test.jpg" alt="" />
+                <img class="video-img" src="box/static/images/test.jpg" alt="" />
                 <div class="video-bg"></div>
                 <p class="video-info">整合各方资源，通过提供多样化的服务，不断丰富和创新服务内容和服务模式，服务意识与服务质量赢得了会员企业的认可。
                 </p>
@@ -191,13 +191,17 @@
 
              <div class="member">
                 <h3 class="member-header"><a hre="#">会员单位</a></h3>
+                <div id="member-list-content">
                 <ul class="member-list">
                     <li><a href=""><img src="images/1.jpg" alt=""></a></li>
                     <li><a href=""><img src="images/2.jpg" alt=""></a></li>
                     <li><a href=""><img src="images/3.jpg" alt=""></a></li>
                     <li><a href=""><img src="images/4.jpg" alt=""></a></li>
                     <li><a href=""><img src="images/5.jpg" alt=""></a></li>
+                    <li><a href=""><img src="images/4.jpg" alt=""></a></li>
+                    <li><a href=""><img src="images/5.jpg" alt=""></a></li>
                 </ul>
+                </div>
 
             </div>
 
@@ -281,6 +285,14 @@
             pause: 2500,
             hoverPause: true
         });
+
+        $('#member-list-content').kxbdSuperMarquee({
+            distance:105,
+            time:2,
+            direction:'up'
+        });
+
+
     });
     </script>
 
