@@ -1,14 +1,15 @@
 <?php include (TEMPLATEPATH . '/header.php'); ?>
-	<div class="wrap content"> 
-    	<div class="main"> 
-        	<div class="place">
+<div class="place">
              <div class="subnavi-l">当前位置: <a href="<?php echo get_settings('home'); ?>">首页</a>&raquo; <?php the_category(', ') ?>&raquo; <?php the_title()?></div>
                 
-			</div> 
+            </div> 
+	<div class="wrap content"> 
+    	<div class="main"> 
+        	
 			<?php if(have_posts()) : ?><?php while(have_posts()) : the_post(); ?>
         	<div class="contents"> 
         		            	<div class="post" id="post-27"> 
-            		<h2><?php the_title(); ?></h2> 
+            		<h2 class="title"><?php the_title(); ?></h2> 
 					<div class="info"> 
                     							<span class="addcomment"><a href="#respond">发表评论</a></span> 
 						                    	<span class="comments"><?php comments_popup_link('0 条', '1 条', '% 条'); ?> 条评论</span> 
@@ -20,10 +21,7 @@
 					<div class="con" id="a27"> 
 						　<?php the_content(); ?>
 <div style="margin-bottom:10px"><a class="bshareDiv" target="_blank" href="http://www.bshare.cn/share">分享&收藏</a><script language="javascript" type="text/javascript" src="http://www.bshare.cn/button.js"></script></div>						<div class="clear"></div> 
-					</div> 
-                	<div class="under"> 
-						<p>文章作者：<?php the_author(); ?><br />本文地址：<a href="<?php the_permalink(); ?>" target="_blank"><?php the_permalink(); ?></a><br />版权所有 &copy; 转载时必须以链接形式注明作者和原始出处！</p> 
-					</div> 
+					</div>
             	</div> 
             	<div id="postnavi"> 
 					<span class="prev">&laquo; <?php previous_post_link('%link'); ?></span> 
@@ -32,8 +30,9 @@
 				</div> 
 				<?php endwhile; ?>
 				<?php endif; ?>
-            	<div class="like"> 
-            	<h4>或许你会感兴趣的文章</h4><ul> 
+            	<div class="like pan2" style="margin:20px 0"> 
+            	<h4 class="pan2-header"><a>或许你会感兴趣的文章</a></h4>
+                <ul class="pan2-body"> 
 <?php
 $cats = wp_get_post_categories($post->ID);
 if ($cats) {
@@ -55,8 +54,9 @@ while (have_posts()) : the_post(); update_post_caches($posts); ?>
 <?php endif; wp_reset_query(); } ?>
 </ul> 
             	</div> 
-            	            	<div class="comment_box"> 
-            	<?php comments_template(); ?>          	</div> 
+            	<div class="comment_box pan2"> 
+            	<?php comments_template(); ?>          	
+                </div> 
         	</div> 
         </div> 
         	<?php include (TEMPLATEPATH . '/sidebar.php'); ?>

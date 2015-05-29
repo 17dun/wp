@@ -65,7 +65,7 @@
 <?php if ('open' == $post->comment_status) : ?>
 
 <div class="clear"></div>
-<h3 id="respond">发表评论</h3>
+<h3 id="respond" class="pan2-header">发表评论</h3>
 <div id="editcomment">
 <?php if ( get_option('comment_registration') && !$user_ID ) : ?>
 <p>你必须 <a href="<?php echo get_option('siteurl'); ?>/wp-login.php?redirect_to=<?php echo urlencode(get_permalink()); ?>">登录后</a> 才能对文章进行评论！</p>

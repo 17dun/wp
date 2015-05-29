@@ -36,9 +36,9 @@
             <div id="nav"> 
                 <ul class="main_menu">
                     <li><a href="/index.php"><span class="menu-index"></span>公会首页</a>
-                     <li><a href="/index.php"><span class="menu-info"></span>关于公会</a>
-                     <li><a href="/index.php"><span class="menu-news"></span>新闻资讯</a>
-                     <li><a href="/index.php"><span class="menu-act"></span>协会活动</a>
+                     <li><a href="?page_id=2"><span class="menu-info"></span>关于公会</a>
+                     <li><a href="/index.php"><span class="menu-news"></span>公会新闻</a>
+                     <li><a href="/index.php"><span class="menu-act"></span>公会活动</a>
                      <li><a href="/index.php"><span class="menu-serv"></span>会员服务</a>
                      <li><a href="/index.php"><span class="menu-merb"></span>入会申请</a>
                      <li><a href="/index.php"><span class="menu-fuh"></span>创投孵化器</a>

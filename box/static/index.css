@@ -1,6 +1,6 @@
 img {border: 0px;}
 *{margin:0;padding:0;}
-body{padding:0px;margin:0px;line-height:180%;font-size:12px;font-family:Verdana,Arial,Helvetica,sans-serif;text-align:center;color:#666;text-align: center;}
+body{padding:0px;margin:0px;line-height:180%;font-size:12px;font-family:Verdana,Arial,Helvetica,sans-serif;text-align:center;color:#333;text-align: center;}
 div,form,img,ul,ol,li,dl,dt,dd{margin:0;padding:0;border:0;text-align:left;}
 h1,h2,h3,h4,h5,h6 {margin:0;padding:0;font-weight:bold;margin-right:auto;margin-left:auto;}
 table,td,tr,th{font-size:12px;}
@@ -276,12 +276,15 @@ body{
     text-decoration: none;
 }
 
+.pan-body{overflow: hidden;}
+
 .pan-body li{
     height: 30px;
     line-height: 30px;
     border-bottom: 1px dashed #eee;
     background:url('images/102.gif') no-repeat 0 5px;
     padding-left: 15px;
+    white-space:nowrap;
 }
 
 
@@ -432,7 +435,7 @@ table a{
 }
 
 
-.tuijian .pan-header,.member .member-header{
+.hasbar .pan-header,.tuijian .pan-header,.member .member-header{
     background-color: #f7f7f7;
     height: 34px;
     border-bottom: 1px #2f7ddb solid;
@@ -441,7 +444,7 @@ table a{
     padding: 0;
 }
 
-.tuijian .pan-header a,.member .member-header a{
+.hasbar .pan-header a,.tuijian .pan-header a,.member .member-header a{
     display: block;
     height: 34px;
     line-height: 34px;
@@ -475,6 +478,10 @@ table a{
     width: 240px;
     margin-left: 5px;
     border:1px solid #eee;
+}
+
+.hasbar li a{
+
 }
 
 .member-list li a{
@@ -512,3 +519,68 @@ border-color: #2e6da4;
 }
 
 .dingping:hover{color:#fff;background-color:#286090;border-color:#204d74}
+
+
+.place{
+    height:28px;
+    width: 980px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: -10px;
+}
+
+
+.post{
+    text-align: center;
+}
+
+.post .title{
+    margin: 0 auto;
+    height: 36px;
+    line-height: 36px;
+}
+
+.post .info{
+     margin: 0 auto;
+}
+
+
+.pan2-header{
+    font-size: 14px;
+    font-weight: bold;
+    color: #3681df;
+    padding: 5px 5px 5px 0;
+    border-bottom: 1px solid #3681df;
+}
+
+.pan2-header a{
+    color: #3681df;
+}
+
+.pan2-header a:hover{
+    text-decoration: none;
+}
+
+.pan2-body{overflow: hidden;}
+
+.pan2-body li{
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 1px dashed #eee;
+    background:url('images/102.gif') no-repeat 0 5px;
+    padding-left: 15px;
+    white-space:nowrap;
+}
+
+.pan2-body a{
+    text-decoration: none;
+    color: #333;
+}
+
+.pan-body a:hover{
+    color:#000;
+}
+.contents{
+    font-size: 14px;
+    line-height: 28px;
+}
