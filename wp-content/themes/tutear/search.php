@@ -1,9 +1,9 @@
 <?php include (TEMPLATEPATH . '/header.php'); ?>
-	<div id="mainbody">
-    	<div id="left">
+	<div class="content wrap">
+    	<div class="main">
         	<div class="place">
 				&#8216;<?php echo esc_html( get_search_query() ); ?>&#8217; 的搜索结果          </div>
-    		<div class="content">
+    		<div class="contents">
 
 			<?php if (have_posts()) : ?>
                 <?php while (have_posts()) : the_post(); ?>
@@ -17,10 +17,13 @@
             	  <div class='pagination'><?php par_pagenavi(); ?></div>
 			</div><!-- #content -->
         </div>
-        	<?php include (TEMPLATEPATH . '/sidebar.php'); ?>
+        <?php include (TEMPLATEPATH . '/sidebar.php'); ?>
 
 		        <div class="rb"></div>
+
+
 	</div>
+    <?php include (TEMPLATEPATH . '/links.php'); ?>
            <div class="clear"></div>
 	</div><!-- #container -->
 

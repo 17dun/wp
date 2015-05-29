@@ -1,6 +1,6 @@
 <?php include (TEMPLATEPATH . '/header.php'); ?>
-	<div id="mainbody">
-    	<div id="left">
+	<div class="content wrap">
+    	<div class="main">
         	<div class="place">
 				当前位置: <a href="<?php echo get_settings('home'); ?>">首页111</a> > <?php the_title(); ?></div>
         	<div class="content">
@@ -23,5 +23,6 @@
         	
     <div class="rb"></div>
 	</div>
+  <?php include (TEMPLATEPATH . '/links.php'); ?>
            <div class="clear"></div>
 	</div><!-- #container -->

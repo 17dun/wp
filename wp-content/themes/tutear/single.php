@@ -62,5 +62,6 @@ while (have_posts()) : the_post(); update_post_caches($posts); ?>
         	<?php include (TEMPLATEPATH . '/sidebar.php'); ?>
         	
 	</div>
+    <?php include (TEMPLATEPATH . '/links.php'); ?>
            <div class="clear"></div>
 <?php get_footer(); ?>

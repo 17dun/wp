@@ -18,12 +18,3 @@
       <li><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></li>
 <?php endwhile; ?>
           </ul></div>
-		  <div class="block comment"><h3>最新评论</h3>
-        	<ul>
-            	
- <?php get_recent_comments(); ?>
-</ul>
-
-
-
-        </div>
