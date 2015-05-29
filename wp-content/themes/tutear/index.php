@@ -53,15 +53,15 @@
                       <div id="slides"> 
                         <div class="slides_container">
                         <div class="slide"> 
-                           <img src="images/11111.jpg" width="700" height="200" alt="第十八届全国大学生网球锦标赛暨全国高校“校长杯”网球比赛开幕"/> 
+                           <img src="images/yf.jpg" width="700" height="200" alt="中国创投公会计划年内敲响纳斯达克钟声"/> 
                            <div class="caption"> 
-                            <h1><a href="#" style="text-decoration:none;font-size:12px;">第十八届全国大学生网球锦标赛暨全国高校“校长杯”网球比赛开幕</a></h1> 
+                            <h1><a href="#" style="text-decoration:none;font-size:12px;">中国创投公会计划年内敲响纳斯达克钟声</a></h1> 
                           </div> 
                         </div>
                         <div class="slide">
-                            <img src="images/big1.jpg" width="700" height="200" alt="第十三届全国大学生田径锦标赛开幕 人大学子男子百米专业组夺冠"/> 
+                            <img src="images/ns.jpg" width="700" height="200" alt="中国国际农商峰会在北京举行"/> 
                             <div class="caption"> 
-                              <h1><a href="#" style="text-decoration:none;font-size:12px;">第十三届全国大学生田径锦标赛开幕 人大学子男子百米专业组夺冠</a></h1> 
+                              <h1><a href="#" style="text-decoration:none;font-size:12px;">中国国际农商峰会在北京举行</a></h1> 
                              </div> 
                         </div> 
                         <div class="slide"> 
@@ -192,13 +192,11 @@
              <div class="member">
                 <h3 class="member-header"><a hre="#">会员单位</a></h3>
                 <ul class="member-list">
-                    <li><a href=""><img src="wp-content/themes/tutear/images/164851114.jpg" alt=""></a></li>
-                    <li><a href=""><img src="wp-content/themes/tutear/images/164851114.jpg" alt=""></a></li>
-                    <li><a href=""><img src="wp-content/themes/tutear/images/164851114.jpg" alt=""></a></li>
-                    <li><a href=""><img src="wp-content/themes/tutear/images/164851114.jpg" alt=""></a></li>
-                    <li><a href=""><img src="wp-content/themes/tutear/images/164851114.jpg" alt=""></a></li>
-                    <li><a href=""><img src="wp-content/themes/tutear/images/164851114.jpg" alt=""></a></li>
-                    <li><a href=""><img src="wp-content/themes/tutear/images/164851114.jpg" alt=""></a></li>
+                    <li><a href=""><img src="images/1.jpg" alt=""></a></li>
+                    <li><a href=""><img src="images/2.jpg" alt=""></a></li>
+                    <li><a href=""><img src="images/3.jpg" alt=""></a></li>
+                    <li><a href=""><img src="images/4.jpg" alt=""></a></li>
+                    <li><a href=""><img src="images/5.jpg" alt=""></a></li>
                 </ul>
 
             </div>

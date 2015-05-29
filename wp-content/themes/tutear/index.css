@@ -302,6 +302,8 @@ body{
 }
 .video .video-img{
     margin:0 auto;
+	width: 236px;
+height: 145px;
     
 }
 
@@ -428,4 +430,9 @@ table a{
 
 .member-list li a{
     display: block;
+}
+
+.member-list img{
+    width:200px;
+	height:80px;
 }
