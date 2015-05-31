@@ -35,13 +35,50 @@
         <div class="header-nav">
             <div id="nav"> 
                 <ul class="main_menu">
-                    <li><a href="/index.php"><span class="menu-index"></span>公会首页</a>
-                     <li><a href="?page_id=2"><span class="menu-info"></span>关于公会</a>
-                     <li><a href="/index.php"><span class="menu-news"></span>公会新闻</a>
-                     <li><a href="/index.php"><span class="menu-act"></span>公会活动</a>
-                     <li><a href="/index.php"><span class="menu-serv"></span>会员服务</a>
-                     <li><a href="/index.php"><span class="menu-merb"></span>入会申请</a>
-                     <li><a href="/index.php"><span class="menu-fuh"></span>创投孵化器</a>
+                    <li class="menu-item"><a href="?"><span class="menu-index"></span>公会首页</a></li>
+                     <li  class="menu-item"><a href="?page_id=2"><span class="menu-info"></span>关于公会</a>
+                        <ul class="sub-menu">
+                            <li><a href="/list-16.html" title="协会简介">协会简介</a></li>
+                            <li><a href="/list-14.html" title="协会领导">协会领导</a></li>
+                            <li><a href="/list-54.html" title="二级分会">二级分会</a></li>
+                            <li><a href="/list-41.html" title="协会成员">协会成员</a></li>
+                            <li><a href="/list-12.html" title="专家顾问">专家顾问</a></li>
+                            <li><a href="/list-39.html" title="联系我们">联系我们</a></li>
+                        </ul>
+                    </li>
+                     <li class="menu-item"><a href="/index.php"><span class="menu-news"></span>新闻资讯</a>
+                            <ul class="sub-menu">
+                            <li><a href="/list-16.html" title="协会简介">协会简介</a></li>
+                            <li><a href="/list-14.html" title="协会领导">协会领导</a></li>
+                            <li><a href="/list-54.html" title="二级分会">二级分会</a></li>
+                            <li><a href="/list-41.html" title="协会成员">协会成员</a></li>
+                            <li><a href="/list-12.html" title="专家顾问">专家顾问</a></li>
+                            <li><a href="/list-39.html" title="联系我们">联系我们</a></li>
+                        </ul>
+                     </li>
+                     <li class="menu-item"><a href="/index.php"><span class="menu-act"></span>公会活动</a>
+                            <ul class="sub-menu">
+                            <li><a href="/list-16.html" title="协会简介">协会简介</a></li>
+                            <li><a href="/list-14.html" title="协会领导">协会领导</a></li>
+                            <li><a href="/list-54.html" title="二级分会">二级分会</a></li>
+                            <li><a href="/list-41.html" title="协会成员">协会成员</a></li>
+                            <li><a href="/list-12.html" title="专家顾问">专家顾问</a></li>
+                            <li><a href="/list-39.html" title="联系我们">联系我们</a></li>
+                        </ul>
+                     </li>
+                     <li class="menu-item"><a href="/index.php"><span class="menu-serv"></span>会员服务</a></li>
+                     <li class="menu-item"><a href="/index.php"><span class="menu-merb"></span>入会申请</a></li>
+                     <li class="menu-item"><a href="/index.php"><span class="menu-fuh"></span>创投孵化器</a>
+                        <ul class="sub-menu">
+                            <li><a href="/list-16.html" title="协会简介">协会简介</a></li>
+                            <li><a href="/list-14.html" title="协会领导">协会领导</a></li>
+                            <li><a href="/list-54.html" title="二级分会">二级分会</a></li>
+                            <li><a href="/list-41.html" title="协会成员">协会成员</a></li>
+                            <li><a href="/list-12.html" title="专家顾问">专家顾问</a></li>
+                            <li><a href="/list-39.html" title="联系我们">联系我们</a></li>
+                        </ul>
+
+                     </li>
                 </ul>
             </div>
         </div>
@@ -281,7 +318,7 @@
             preload: true,
             preloadImage: 'images/ajax-loader.gif',
             effect: 'slide',
-            play: 5000,
+            play: 4000,
             pause: 2500,
             hoverPause: true
         });
@@ -291,6 +328,18 @@
             time:2,
             direction:'up'
         });
+
+
+        $('.menu-item').hover(
+            function(){
+                if ($(this).find("li").length > 0) {
+                    $(this).children("ul").stop(true, true).slideDown(100);
+                }
+            },
+            function(){
+                $(this).children("ul").stop(true, true).slideUp("fast")
+            }
+        )
 
 
     });
