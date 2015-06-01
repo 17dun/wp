@@ -2826,7 +2826,7 @@ msgstr "标题区域和文章编辑区域的位置是固定的，但您可以通
 
 #: wp-admin/edit-form-advanced.php:355
 msgid "Inserting Media"
-msgstr "插入多媒体"
+msgstr "插入资源"
 
 #: wp-admin/edit-form-advanced.php:361
 msgid "Several boxes on this screen contain settings for how your content will be published, including:"
@@ -3380,7 +3380,7 @@ msgstr "操作"
 
 #: wp-admin/includes/media.php:2173 wp-admin/menu.php:63 wp-admin/menu.php:240
 msgid "Media"
-msgstr "多媒体"
+msgstr "资源"
 
 #: wp-admin/includes/theme.php:224
 msgid "Blavatar"

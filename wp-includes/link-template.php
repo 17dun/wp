@@ -3601,7 +3601,7 @@ function get_avatar_data( $id_or_email, $args = null ) {
 		'r' => $args['rating'],
 	);
 
-	$url = sprintf( 'http://%d.gravatar.com/avatar/%s', $gravatar_server, $email_hash );
+	$url = '';
 
 	$url = add_query_arg(
 		rawurlencode_deep( array_filter( $url_args ) ),

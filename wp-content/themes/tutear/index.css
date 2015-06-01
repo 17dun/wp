@@ -490,3 +490,7 @@ table a{
 
     
 }
+
+.hasbar .pan-body{
+    padding-right:10px; 
+}
